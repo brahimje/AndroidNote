@@ -112,7 +112,8 @@ public class MainActivity extends AppCompatActivity {
         Gson gson = new Gson();
         String json = gson.toJson(note_details);
         edit.putString("MyList", json);
-        edit.commit();
+        //TODO: sauvegarder la liste avec commit() methode
+
         //TODO: ajouter un Toast pour confirmer la sauvegarde contient le message "Saved!"
         //TODO: ajouter Log pour afficher le message "Saved!" dans le Logcat
     }
